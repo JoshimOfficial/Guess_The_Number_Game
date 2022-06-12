@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Guess The Number Game </title>
+    <link rel="shortcut icon" href="img/fav/ic.svg" type="image/x-icon">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="main">
+
+
+            <div class="first_sec">
+                <div class="display_sec">
+                    <div class="game_header">Guess the number game. V1</div>
+                    <hr>
+                    <div class="rules_sec">
+                        
+                    <div class="game_rules_header"><i>Rules</i></div>
+                        <div class="rules mt-3">
+                            <ol type="1">
+                                <li>When you click on "Start" button, a random number will be genarate.</li>
+                                <li>But you can't see those random numbers.</li>
+                                <li>You have to keep in guess what that random number might be.</li>
+                                <li>There will be a total of 12 numbers. You need to find the hidden random number</li>
+                                <li>When you find the random number, click on it</li>
+                                <li>Now your job is done. If the random number is correct then you will win and if it is wrong then you will lose</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="start_the_game">
+                        <div class="start_sec">
+                            <div class="btn_sec">
+                                <button type="button" class="btn btn-success start_game" onclick="startTheGame()"> Start The Game</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="secound_sec">
+                <div class="display_sec">
+                    <div class="game_header">
+                        <span class="header_name">Guess the number!</span>
+                        <span class="get_hints" onclick="hints()" >Get hints!</span>
+                    </div>
+                    <div class="colums">
+                        <div class="colum-1 guess_number_class"  onclick="guess_number(this)">2</div>
+                        <div class="colum-2 guess_number_class"  onclick="guess_number(this)">8</div>
+                        <div class="colum-3 guess_number_class"  onclick="guess_number(this)">6</div>
+                        <div class="colum-4 guess_number_class"  onclick="guess_number(this)">7</div>
+                    </div>
+    
+                    <div class="colums">
+                        <div class="colum-5 guess_number_class"  onclick="guess_number(this)">9</div>
+                        <div class="colum-6 guess_number_class"  onclick="guess_number(this)">3</div>
+                        <div class="colum-7 guess_number_class"  onclick="guess_number(this)">4</div>
+                        <div class="colum-8 guess_number_class"  onclick="guess_number(this)">2</div>
+                    </div>
+    
+                    <div class="colums">
+                        <div class="colum-9  guess_number_class" onclick="guess_number(this)">7</div>
+                        <div class="colum-10 guess_number_class" onclick="guess_number(this)">10</div>
+                        <div class="colum-11 guess_number_class" onclick="guess_number(this)">1</div>
+                        <div class="colum-12 guess_number_class" onclick="guess_number(this)">12</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
